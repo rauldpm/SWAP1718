@@ -18,5 +18,5 @@ En esta practica se realizara la instalacion de dos maquinas virtuales con Ubunt
 
 Para permitir la conexion entre ambas maquinas virtuales, se ha creado una red Solo-Anfitrion en VirtualBox con las siguientes caracteristicas:
 
-![Imagen Red-Anfitrion Nombre](ruta "Imagen Red-Anfitrion Nombre")
+![Imagen Red-Anfitrion Nombre](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/RedSoloAnfitrion.png "Imagen Red-Anfitrion Nombre")
 
