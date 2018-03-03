@@ -16,7 +16,9 @@ En esta practica se realizara la instalacion de dos maquinas virtuales con Ubunt
 - OpenSSH server
 - LAMP server
 
-### Configuracion ###
+Como el proceso de alguna configuraciones es exactamente el mismo en ambas maquinas, en algunos pasos solo se mostrara la configuracion de una de ellas, indicando que hay que repetir para la otra maquina.
+
+### Configuracion de red ###
 
 Para permitir la conexion entre ambas maquinas virtuales, se ha creado una red Solo-Anfitrion en VirtualBox con las siguientes caracteristicas:
 
@@ -89,7 +91,52 @@ Con esto, hemos reseteado la red, y como vemos, ya funciona:
 
 Este proceso se realiza para ambas maquinas.
 
+### Conexion por ssh entre maquinas ###
 
+Para la conexion mediante ssh, tenemos que seguir una serie de pasos, los cuales consisten en:
+
+1. Crear clave ssh
+2. Importar clave a la otra maquina
+
+Para la creacion de la clave ssh tenemos que acudir al siguiente comando, el cual nos creara una clave a la cual podremos configurar con un nombre (opcional) y darle una contraseña para su uso. 
+
+- shh-keygen
+
+**Creacion de clave ssh en maquina 1 (ubuntu1)**
+
+
+
+**Creacion de clave ssh en maquina 2 (ubuntu2)**
+
+
+
+Una vez creadas las claves, las importamos a la otra maquina con el siguiente comando.
+
+- ssh-copy-id rauldpm@192.168.56.115 (en maquina 1)
+- ssh-copy-id rauldpm@192.168.56.105 (en maquina 2)
+
+**Envio de clave ssh de maquina 1 (ubuntu1) a maquina 2 (ubuntu2)**
+
+
+
+**Envio de clave ssh de maquina 2 (ubuntu2) a maquina 1 (ubuntu1)**
+
+
+
+Una vez que ambas maquinas tienen la clave de la otra, es hora de comprobar que se puede realizar la conexion entre ellas, esto se hara con el comando:
+
+- ssh rauldpm@192.168.56.115 (en maquina 1, para conectar con la maquina 2)
+- ssh rauldpm@192.168.56.105 (en maquina 2, para conectar con la maquina 1)
+
+**Conexion de maquina 1 (ubuntu1) a maquina2 (ubuntu2)**
+
+**Conexion de maquina 2 (ubuntu2) a maquina1 (ubuntu1)**
+
+
+
+### Creacion y prueba de fichero en HTML ###
+
+### Conexion por curl entre maquinas ###
 
 
 
