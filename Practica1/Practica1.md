@@ -151,6 +151,22 @@ Ahora vamos a comprobar que el Apache2 esta en funcionamiento, para ello se va a
   </BODY>
 </HTML>
 
+Este comando se ejecuta en ambas maquinas, no solo en una, para crar un fichero en las dos maquinas y comprobar que ambas maquinas tienen Apache2 en funcionamiento, pero solo se va a mostrar como se hace en una maquina.
+
+- sudo vim /var/www/html/hola.html
+
+Y para ver el contenido mas facilmente:
+
+- sudo less /var/www/html/hola.html
+
+![Archivo HTML](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/holaMaquina1.png "Archivo HTML")
+
+Y en el navegador de la maquina anfitrion comprobamos que se interpreta el archivo.
+
+![Comprobacion HTML](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/HTML.png "Comprobacion HTML")
+
+
+
 
 
 ### Conexion por curl entre maquinas ###
