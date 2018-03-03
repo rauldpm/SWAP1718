@@ -20,15 +20,15 @@ Para permitir la conexion entre ambas maquinas virtuales, se ha creado una red S
 
 Nombre Red Solo-Anfitrion
 
-![Imagen Red-Anfitrion Nombre](<center>https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/RedSoloAnfitrion.png</center> "Imagen Red-Anfitrion Nombre")
+![Imagen Red-Anfitrion Nombre](<center> https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/RedSoloAnfitrion.png </center> "Imagen Red-Anfitrion Nombre")
 
 Configuracion Adaptador
 
-![Imagen Adaptador Solo-Afitrion](<center>https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/RedSoloAnfitrionAdaptador.png</center> "Imagen Configuracion Adaptador")
+![Imagen Adaptador Solo-Afitrion](<center> https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/RedSoloAnfitrionAdaptador.png </center> "Imagen Configuracion Adaptador")
 
 Configuracion DHCP
 
-![Imagen DHCP Solo-Anfitrion](<center>https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/RedSoloAnfitrionDHCP.png</center> "Imagen Configuracion DHCP")
+![Imagen DHCP Solo-Anfitrion](<center> https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/RedSoloAnfitrionDHCP.png </center> "Imagen Configuracion DHCP")
 
 
 
