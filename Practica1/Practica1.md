@@ -1,6 +1,6 @@
-#Practica 1
+# Practica 1 #
 
-##UGR - ETSIIT - SWAP
+## UGR - ETSIIT - SWAP ##
 
 Participantes:
 
