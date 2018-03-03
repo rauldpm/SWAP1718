@@ -28,7 +28,7 @@ Configuracion Adaptador
 
 Configuracion DHCP
 
-![Imagen DHCP Solo-Anfitrion](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/RedSoloAnfitrionDHCP.png "Imagen Configuracion DHCP)
+![Imagen DHCP Solo-Anfitrion](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/RedSoloAnfitrionDHCP.png "Imagen Configuracion DHCP")
 
 
 
