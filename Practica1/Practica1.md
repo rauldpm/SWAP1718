@@ -50,17 +50,17 @@ Despues de crear la copia de seguridad, editamos el archivo para crear la interf
 
 ![Imagen Interfaz Maquina 2](FALTA "Imagen Interfaz 2")
 
-Como podemos ver, se le ha asignado la direccion ip 192.168.56.105 a la maquina SWAP1, y 192.168.56.115 a la maquina SWAP2, mediante estas direcciones las maquinas seran capaces de conectarse entre si como veremos mas adelante.
+Como podemos ver, se le ha asignado la direccion ip 192.168.56.105 a la maquina ubuntu1 (SWAP1), y 192.168.56.115 a la maquina ubuntu2 (SWAP2), mediante estas direcciones las maquinas seran capaces de conectarse entre si como veremos mas adelante.
 
 Para ver si funciona esto, hacemos ping a cada maquina
 
-**Ping maquina 1 a maquina 2**
+**Ping maquina 1 (ubuntu1) a maquina 2 (ubuntu2)**
 
 - ping 192.168.56.115
 
 ![Imagen ping maquina 1 a 2](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/Ping%20maquina%201.png "Imagen Ping maquina 1")
 
-**Ping maquina 2 a maquina 1** 
+**Ping maquina 2 (ubuntu2) a maquina 1 (ubuntu1)** 
 
 - ping 192.168.56.105
 
@@ -74,7 +74,7 @@ Como vemos, hay conexion entre ellas, lo siguiente es comprobar si hay conexion 
 
 ![Ping fallido](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/ping%20google%20fallido.png "Ping fallido")
 
-En algunas ocasiones, es posible que de error y no haya salida (se quedara pensando durante mucho tiempo, para arreglar esto, ejecutamos los siguiente comandos:
+En algunas ocasiones, es posible que de error y no haya salida (se quedara pensando durante mucho tiempo), para arreglar esto, ejecutamos los siguiente comandos:
 
 - sudo ifconfig enp0s8 down
 - sudo ip addr
