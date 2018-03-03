@@ -12,9 +12,9 @@
 
 1. [Descripcion](#id1)
 2. [Configuracion de red](#id2)
-3. [Conexion por ssh entre maquinas](#Conexion por ssh entre maquinas)
-4. [Creacion y prueba de fichero en HTML](#Creacion y prueba de fichero en HTML)
-5. [Conexion por curl entre maquinas](#Conexion por curl entre maquinas)
+3. [Conexion por ssh entre maquinas](#id3)
+4. [Creacion y prueba de fichero en HTML](#id4)
+5. [Conexion por curl entre maquinas](#id5)
 
 ### Descripcion <a name="id1"></a>
 
@@ -98,7 +98,7 @@ Con esto, hemos reseteado la red, y como vemos, ya funciona:
 
 Este proceso se realiza para ambas maquinas.
 
-### Conexion por ssh entre maquinas ###
+### Conexion por ssh entre maquinas <a name="id3"></a>
 
 Para la conexion mediante ssh, tenemos que seguir una serie de pasos, los cuales consisten en:
 
@@ -148,7 +148,7 @@ Como podemos ver, antes de cada conexion se ha realizado un ifconfig de la inter
 
 Tambien podemos saber que ha sido un exito porque el nombre de la maquina cambia.
 
-### Creacion y prueba de fichero en HTML ###
+### Creacion y prueba de fichero en HTML <a name="id4"></a>
 
 Ahora vamos a comprobar que el Apache2 esta en funcionamiento, para ello se va a crear un archivo HTML llamado hola.html en la ruta /var/www/html/ , el cual contendra el siguiente codigo:
 
@@ -173,7 +173,7 @@ Y en el navegador de la maquina anfitrion comprobamos que se interpreta el archi
 ![Comprobacion HTML](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/HTML.png "Comprobacion HTML")
 
 
-### Conexion por curl entre maquinas ###
+### Conexion por curl entre maquinas <a name="id5"></a>
 
 Para comprobar que tenemos conectividad mediante curl, realizaremos una peticion del archivo hola.html de la otra maquina.
 
