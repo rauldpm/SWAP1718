@@ -24,13 +24,5 @@ Nombre Red Solo-Anfitrion
 
 <center>https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/RedSoloAnfitrion.png</center>
 
-Configuracion Adaptador
-
-![Imagen Adaptador Solo-Afitrion](<center>https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/RedSoloAnfitrionAdaptador.png</center> "Imagen Configuracion Adaptador")
-
-Configuracion DHCP
-
-![Imagen DHCP Solo-Anfitrion](<center>https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/RedSoloAnfitrionDHCP.png</center> "Imagen Configuracion DHCP")
-
 
 
