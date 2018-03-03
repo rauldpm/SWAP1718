@@ -22,7 +22,7 @@ Para permitir la conexion entre ambas maquinas virtuales, se ha creado una red S
 
 Nombre Red Solo-Anfitrion
 
-![Imagen Red-Anfitrion Nombre](<center>https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/RedSoloAnfitrion.png</center> "Imagen Red-Anfitrion Nombre")
+<center>https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/RedSoloAnfitrion.png</center>
 
 Configuracion Adaptador
 
