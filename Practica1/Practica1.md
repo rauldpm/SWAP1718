@@ -186,7 +186,7 @@ Para comprobar que tenemos conectividad mediante curl, realizaremos una peticion
 
 **Curl desde la maquina 2 (ubuntu2) a la maquina 1 (ubuntu1)**
 
-![Curl ubuntu2 a ubuntu1](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/curl1.png "Curl ubuntu2 a ubuntu1")
+![Curl ubuntu2 a ubuntu1](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/curl2.png "Curl ubuntu2 a ubuntu1")
 
 
 
