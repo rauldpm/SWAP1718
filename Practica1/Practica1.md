@@ -139,7 +139,19 @@ Una vez que ambas maquinas tienen la clave de la otra, es hora de comprobar que 
 
 Como podemos ver, antes de cada conexion se ha realizado un ifconfig de la interfaz **enp0s8**, y si nos fijamos, una vez realizada la conexion, la direccion ip de la interfaz **enp0s8** cambia de valor, coincidiendo con la ip a la cual se le ha realizado la conexion.
 
+Tambien podemos saber que ha sido un exito porque el nombre de la maquina cambia.
+
 ### Creacion y prueba de fichero en HTML ###
+
+Ahora vamos a comprobar que el Apache2 esta en funcionamiento, para ello se va a crear un archivo HTML llamado hola.html en la ruta /var/www/html/ , el cual contendra el siguiente codigo:
+
+<HTML>
+  <BODY>
+    Esto funciona  :)
+  </BODY>
+</HTML>
+
+
 
 ### Conexion por curl entre maquinas ###
 
