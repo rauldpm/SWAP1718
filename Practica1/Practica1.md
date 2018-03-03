@@ -7,7 +7,7 @@ Participantes:
 - Raul Del Pozo Moreno
 - Juan Carlos Hermoso Quesada
 
-||-------------------------------------------||
+||---------------------------   ----------------||
 
 ### Descripcion ###
 
