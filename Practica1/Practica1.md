@@ -1,11 +1,11 @@
-# Practica 1 Presentación de las prácticas y preparación de las herramientas #
+# Practica 1. Presentación de las prácticas y preparación de las herramientas #
 
 ## Universidad de Granada - ETSIIT ##
-## Servidores Web de Altas Prestaciones ##
+### Servidores Web de Altas Prestaciones ###
 
 ### Participantes ###
 
-- Raul Del Pozo Moreno
+- Raúl Del Pozo Moreno
 - Juan Carlos Hermoso Quesada
 
 ### Indice ###
