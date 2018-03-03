@@ -48,7 +48,7 @@ Despues de crear la copia de seguridad, editamos el archivo para crear la interf
 
 ![Imagen Interfaz Maquina 1](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/Configuracion%20interfaces%201.png "Imagen Interfaz 1")
 
-![Imagen Interfaz Maquina 2](FALTA "Imagen Interfaz 2")
+![Imagen Interfaz Maquina 2](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/Configuracion%20interfaces%202.png "Imagen Interfaz 2")
 
 Como podemos ver, se le ha asignado la direccion ip 192.168.56.105 a la maquina ubuntu1 (SWAP1), y 192.168.56.115 a la maquina ubuntu2 (SWAP2), mediante estas direcciones las maquinas seran capaces de conectarse entre si como veremos mas adelante.
 
