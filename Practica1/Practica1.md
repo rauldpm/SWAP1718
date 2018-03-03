@@ -166,15 +166,20 @@ Y en el navegador de la maquina anfitrion comprobamos que se interpreta el archi
 ![Comprobacion HTML](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/HTML.png "Comprobacion HTML")
 
 
-
-
-
 ### Conexion por curl entre maquinas ###
 
+Para comprobar que tenemos conectividad mediante curl, realizaremos una peticion del archivo hola.html de la otra maquina.
 
+- curl 192.168.56.115/hola.html (desde ubuntu1 a ubuntu2)
+- curl 192.168.56.105/hola.html (desde ubuntu2 a ubuntu1)
 
+**Curl desde la maquina 1 (ubuntu1) a la maquina 2 (ubuntu2)**
 
+![Curl ubuntu1 a ubuntu2](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/curl1.png "Curl ubuntu1 a ubuntu2")
 
+**Curl desde la maquina 2 (ubuntu2) a la maquina 1 (ubuntu1)**
+
+![Curl ubuntu2 a ubuntu1](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/curl1.png "Curl ubuntu2 a ubuntu1")
 
 
 
