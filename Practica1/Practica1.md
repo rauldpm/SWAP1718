@@ -1,13 +1,12 @@
-# Practica 1 #
+# Practica 1 Presentación de las prácticas y preparación de las herramientas #
 
-## UGR - ETSIIT - SWAP ##
+## Universidad de Granada - ETSIIT ##
+## Servidores Web de Altas Prestaciones ##
 
-Participantes:
+**Participantes**
 
 - Raul Del Pozo Moreno
 - Juan Carlos Hermoso Quesada
-
-||-------------------------------------------------||
 
 ### Descripcion ###
 
