@@ -66,12 +66,11 @@ Para ver si funciona esto, hacemos ping a cada maquina
 **Ping maquina 1 (ubuntu1) a maquina 2 (ubuntu2)**
 
 - ping 192.168.56.115
+- ping 192.168.56.105
 
 ![Imagen ping maquina 1 a 2](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/Ping%20maquina%201.png "Imagen Ping maquina 1")
 
 **Ping maquina 2 (ubuntu2) a maquina 1 (ubuntu1)** 
-
-- ping 192.168.56.105
 
 ![Imagen ping maquina 2 a 1](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/Ping%20maquina%202.png "Imagen Ping maquina 2")
 
@@ -130,7 +129,6 @@ Una vez creadas las claves, las importamos a la otra maquina con el siguiente co
 
 ![Envio clave ssh ubuntu2 a ubuntu1](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/ssh-copy2.png "Envio clave ssh ubuntu2 a ubuntu1")
 
-
 Una vez que ambas maquinas tienen la clave de la otra, es hora de comprobar que se puede realizar la conexion entre ellas, esto se hara con el comando:
 
 - ssh rauldpm@192.168.56.115 (en maquina 1, para conectar con la maquina 2)
@@ -148,9 +146,10 @@ Como podemos ver, antes de cada conexion se ha realizado un ifconfig de la inter
 
 Tambien podemos saber que ha sido un exito porque el nombre de la maquina cambia.
 
+
 ### Creacion y prueba de fichero en HTML <a name="id4"></a>
 
-Ahora vamos a comprobar que el Apache2 esta en funcionamiento, para ello se va a crear un archivo HTML llamado hola.html en la ruta /var/www/html/ , el cual contendra el siguiente codigo:
+Ahora vamos a comprobar que el Apache2 esta en funcionamiento, para ello se va a crear un archivo HTML llamado hola.html en la ruta "/var/www/html/", el cual contendra el siguiente codigo:
 
 <HTML>
   <BODY>
@@ -158,7 +157,7 @@ Ahora vamos a comprobar que el Apache2 esta en funcionamiento, para ello se va a
   </BODY>
 </HTML>
 
-Este comando se ejecuta en ambas maquinas, no solo en una, para crar un fichero en las dos maquinas y comprobar que ambas maquinas tienen Apache2 en funcionamiento, pero solo se va a mostrar como se hace en una maquina.
+Esto lo vamos a mostrar solo en una maquina ya que es el mismo proceso en ambas maquinas.
 
 - sudo vim /var/www/html/hola.html
 
