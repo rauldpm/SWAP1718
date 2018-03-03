@@ -17,7 +17,7 @@ En esta practica se realizara la instalacion de dos maquinas virtuales con Ubunt
 - LAMP server
 
 ### Configuracion ###
-  
+   
 Para permitir la conexion entre ambas maquinas virtuales, se ha creado una red Solo-Anfitrion en VirtualBox con las siguientes caracteristicas:
 
 **Nombre Red Solo-Anfitrion**
