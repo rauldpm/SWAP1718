@@ -10,13 +10,13 @@
 
 ### Indice ###
 
-1. [Descripcion](#Descripcion)
-2. [Configuracion de red](#Configuracion de red)
+1. [Descripcion](#id1)
+2. [Configuracion de red](#id2)
 3. [Conexion por ssh entre maquinas](#Conexion por ssh entre maquinas)
 4. [Creacion y prueba de fichero en HTML](#Creacion y prueba de fichero en HTML)
 5. [Conexion por curl entre maquinas](#Conexion por curl entre maquinas)
 
-### Descripcion 
+### Descripcion <a name="id1"></a>
 
 En esta practica se realizara la instalacion de dos maquinas virtuales con Ubuntu Server 16.04.3. Durante la instalacion se instalaran los servicios siguientes, tal y como indica la practica:
 
@@ -25,7 +25,7 @@ En esta practica se realizara la instalacion de dos maquinas virtuales con Ubunt
 
 Como el proceso de alguna configuraciones es exactamente el mismo en ambas maquinas, en algunos pasos solo se mostrara la configuracion de una de ellas, indicando que hay que repetir para la otra maquina.
 
-### Configuracion de red ###
+### Configuracion de red <a name="id2"></a>
 
 Para permitir la conexion entre ambas maquinas virtuales, se ha creado una red Solo-Anfitrion en VirtualBox con las siguientes caracteristicas:
 
