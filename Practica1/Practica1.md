@@ -32,5 +32,12 @@ Para permitir la conexion entre ambas maquinas virtuales, se ha creado una red S
 
 ![Imagen DHCP Solo-Anfitrion](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/RedSoloAnfitrionDHCP.png "Imagen Configuracion DHCP")
 
+**Configuracion Red Maquina Virtual**
+
+Una vez configurado Virtual Box, hay que crear el adaptador en la maquina virtual, para ello, vamos a la **Configuracion** de la maquina virtual y en la opcion de **Red**, vamos a la pestaña **Adaptador 2**, aqui lo configuramos de la siguiente manera:
+
+![Imagen Configuracion Red Maquina Virtual](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/Configuracion%20Red%20Maquina%20Virtual.png "Imagen Configuracion Red Maquina Virtual")
+
+
 
 
