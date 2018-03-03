@@ -16,7 +16,7 @@
 4. [Creacion y prueba de fichero en HTML](#Creacion y prueba de fichero en HTML)
 5. [Conexion por curl entre maquinas](#Conexion por curl entre maquinas)
 
-### Descripcion ###
+### Descripcion 
 
 En esta practica se realizara la instalacion de dos maquinas virtuales con Ubuntu Server 16.04.3. Durante la instalacion se instalaran los servicios siguientes, tal y como indica la practica:
 
