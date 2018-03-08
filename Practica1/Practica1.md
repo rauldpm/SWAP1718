@@ -104,26 +104,17 @@ Para la conexion mediante ssh, tenemos que seguir una serie de pasos, los cuales
 1. Crear clave ssh
 2. Importar clave a la otra maquina
 
+**Creacion de clave ssh en maquina 2 (ubuntu2)**
+
 Para la creacion de la clave ssh tenemos que acudir al siguiente comando, el cual nos creara una clave a la cual podremos configurar con un nombre (opcional) y darle una contraseña para su uso. 
 
 - shh-keygen
 
-**Creacion de clave ssh en maquina 1 (ubuntu1)**
-
-![Clave ssh ubuntu1](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/ssh-keygen1.png "Clave ssh en maquina 1")
-
-**Creacion de clave ssh en maquina 2 (ubuntu2)**
-
 ![Clave ssh ubuntu2](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/ssh-keygen2.png "Clave ssh en maquina 2")
 
-Una vez creadas las claves, las importamos a la otra maquina con el siguiente comando.
+Una vez creada la clave, la importamos de la maquina 2 a la otra maquina con el siguiente comando.
 
-- ssh-copy-id rauldpm@192.168.56.115 (en maquina 1)
-- ssh-copy-id rauldpm@192.168.56.105 (en maquina 2)
-
-**Envio de clave ssh de maquina 1 (ubuntu1) a maquina 2 (ubuntu2)**
-
-![Envio clave ssh ubuntu1 a ubuntu2](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/ssh-copy1.png "Envio clave ssh ubuntu1 a ubuntu2")
+- ssh-copy-id rauldpm@192.168.56.105
 
 **Envio de clave ssh de maquina 2 (ubuntu2) a maquina 1 (ubuntu1)**
 
@@ -131,18 +122,13 @@ Una vez creadas las claves, las importamos a la otra maquina con el siguiente co
 
 Una vez que ambas maquinas tienen la clave de la otra, es hora de comprobar que se puede realizar la conexion entre ellas, esto se hara con el comando:
 
-- ssh rauldpm@192.168.56.115 (en maquina 1, para conectar con la maquina 2)
 - ssh rauldpm@192.168.56.105 (en maquina 2, para conectar con la maquina 1)
-
-**Conexion de maquina 1 (ubuntu1) a maquina2 (ubuntu2)**
-
-![Conexion ssh ubuntu1 a ubuntu2](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/ssh-connect1.png "Conexion ssh ubuntu1 a ubuntu2")
 
 **Conexion de maquina 2 (ubuntu2) a maquina1 (ubuntu1)**
 
 ![Conexion ssh ubuntu2 a ubuntu1](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/ssh-connect2.png "Conexion ssh ubuntu2 a ubuntu1")
 
-Como podemos ver, antes de cada conexion se ha realizado un ifconfig de la interfaz **enp0s8**, y si nos fijamos, una vez realizada la conexion, la direccion ip de la interfaz **enp0s8** cambia de valor, coincidiendo con la ip a la cual se le ha realizado la conexion.
+Como podemos ver, antes de la conexion se ha realizado un ifconfig de la interfaz **enp0s8**, y si nos fijamos, una vez realizada la conexion, la direccion ip de la interfaz **enp0s8** cambia de valor, coincidiendo con la ip a la cual se le ha realizado la conexion.
 
 Tambien podemos saber que ha sido un exito porque el nombre de la maquina cambia.
 
