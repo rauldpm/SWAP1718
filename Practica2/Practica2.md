@@ -27,6 +27,12 @@ Antes de empezar esta practica se ha de decir que los hostnames de las maquinas 
 
 ### Crear tar en con contenido local en equipo remoto <a name="id2"></a>
 
+![Imagen CreacionYEnvioTarEnRemoto](https://github.com/rauldpm/SWAP1718/blob/master/Practica2/Imagenes/enviandoTar.png "Imagen CreacionYEnvioTarEnRemoto")
+
+![Imagen ComprobandoTar](https://github.com/rauldpm/SWAP1718/blob/master/Practica2/Imagenes/archivoRecibido.png "Imagen ComprobandoTar")
+
+
+
 ### Instalar la herramienta rsync <a name="id3"></a>
 
 ### Acceso sin contraseña para ssh <a name="id4"></a>
