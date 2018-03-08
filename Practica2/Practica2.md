@@ -16,7 +16,7 @@
 4. [Acceso sin contraseña para ssh](#id4)
 5. [Programar tareas con crontab](#id5)
 
-### Descripcion < name="id1"></a>
+### Descripcion <a name="id1"></a>
 
 Antes de empezar esta practica se ha de decir que los hostnames de las maquinas referenciadas en la practica 1 como sigue:
 
@@ -25,12 +25,12 @@ Antes de empezar esta practica se ha de decir que los hostnames de las maquinas 
 
 
 
-### Crear tar en con contenido local en equipo remoto < name="id2"></a>
+### Crear tar en con contenido local en equipo remoto <a name="id2"></a>
 
-### Instalar la herramienta rsync < name="id3"></a>
+### Instalar la herramienta rsync <a name="id3"></a>
 
-### Acceso sin contraseña para ssh < name="id4"></a>
+### Acceso sin contraseña para ssh <a name="id4"></a>
 
-### Programar tareas con crontab < name="id5"></a>
+### Programar tareas con crontab <a name="id5"></a>
 
 
