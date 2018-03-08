@@ -26,7 +26,7 @@ En este apartado crearemos un fichero tar con el contenido de "/var/www" de la m
 
 - tar czf - /var/www | ssh 192.168.56.105 'cat > ~/tar.tgz'
 
-![Imagen CreacionYEnvioTarEnRemoto](https://github.com/rauldpm/SWAP1718/blob/master/Practica2/Imagenes/enviandoTar.png "Imagen CreacionYEnvioTarEnRemoto")
+![Imagen CreacionYEnvioTarEnRemoto](https://github.com/rauldpm/SWAP1718/blob/master/Practica2/Imagenes/enviandoArchivo.png "Imagen CreacionYEnvioTarEnRemoto")
 
 Una vez ejecutado el comando anterior, en el home de la maquina 1 podemos ver que ha aparecido un archivo con el nombre que se le ha dado al enviar.
 
