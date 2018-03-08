@@ -10,3 +10,20 @@
 
 ### Indice ###
 
+1. [Descripcion](#id1)
+2. [Crear tar en con contenido local en equipo remoto](#id2)
+3. [Instalar la herramienta rsync](#id3)
+4. [Acceso sin contraseña para ssh](#id4)
+5. [Programar tareas con crontab](#id5)
+
+### Descripcion <name="id1"></a>
+
+### Crear tar en con contenido local en equipo remoto <name="id2"></a>
+
+### Instalar la herramienta rsync <name="id3"></a>
+
+### Acceso sin contraseña para ssh <name="id4"></a>
+
+### Programar tareas con crontab <name="id5"></a>
+
+
