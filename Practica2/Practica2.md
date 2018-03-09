@@ -106,4 +106,38 @@ Y como volvemos a ver, conecta directamente
 
 ### 5 - Programar tareas con crontab <a name="id5"></a>
 
+Finalmente, vamos a programar una tarea que nos sincronize la carpeta "/var/www/" cada cierto tiempo.
+
+Para ello, hay que editar el fichero "/etc/crontab" y añadimos la nueva regla:
+
+- sudo vim /etc/crontab
+
+En el archivo añadimos la siguiente linea:
+
+- *  *  * * * rauldpm rsync -avz -e ssh 192.168.56.105:/var/www/ /var/www/
+
+![Imagen crontab](https://github.com/rauldpm/SWAP1718/blob/master/Practica2/Imagenes/crontab.png "Imagen crontab")
+
+Esta linea lo que hace es ejecutar el comando rsync mediante el usuario rauldpm, cada minuto.
+
+Para comprobar su funcionamiento, editamos el archivo "hola.html" en la maquina 1 y vemos si al pasar un minuto ha cambiado el archivo "hola.html" de la maquina 2.
+
+Primero cambiamos el contenido de la maquina 1
+
+![Imagen hola11](https://github.com/rauldpm/SWAP1718/blob/master/Practica2/Imagenes/hola11.png "Imagen hola11")
+
+Y vemos que la maquina 2 tiene otro contenido
+
+![Imagen hola21](https://github.com/rauldpm/SWAP1718/blob/master/Practica2/Imagenes/hola21.png "Imagen hola21")
+
+Acto seguido cambiamos el contenido del fichero de la maquina 1
+
+![Imagen hola12](https://github.com/rauldpm/SWAP1718/blob/master/Practica2/Imagenes/hola12.png "Imagen hola12")
+
+Y al pasar el minuto comprobamos el archivo de la maquina 2
+
+![Imagen hola22](https://github.com/rauldpm/SWAP1718/blob/master/Practica2/Imagenes/hola22.png "Imagen hola22")
+
+
+
 
