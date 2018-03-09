@@ -114,7 +114,7 @@ Para ello, hay que editar el fichero "/etc/crontab" y añadimos la nueva regla:
 
 En el archivo añadimos la siguiente linea:
 
-- *  *  * * * rauldpm rsync -avz -e ssh 192.168.56.105:/var/www/ /var/www/
+- \*  \*  \* \* \* rauldpm rsync -avz -e ssh 192.168.56.105:/var/www/ /var/www/
 
 ![Imagen crontab](https://github.com/rauldpm/SWAP1718/blob/master/Practica2/Imagenes/crontab.png "Imagen crontab")
 
