@@ -16,11 +16,11 @@
 4. [Acceso sin contraseña para ssh](#id4)
 5. [Programar tareas con crontab](#id5)
 
-### Descripcion <a name="id1"></a>
+### 1 - Descripcion <a name="id1"></a>
 
 
 
-### Crear tar en con contenido local en equipo remoto <a name="id2"></a>
+### 2 - Crear tar en con contenido local en equipo remoto <a name="id2"></a>
 
 En este apartado crearemos un fichero tar con el contenido de "/var/www" de la maquina 2 al home de la maquina 1, para ello ejecutaremos la siguiente orden:
 
@@ -33,7 +33,7 @@ Una vez ejecutado el comando anterior, en el home de la maquina 1 podemos ver qu
 ![Imagen ComprobandoTar](https://github.com/rauldpm/SWAP1718/blob/master/Practica2/Imagenes/archivoRecibido.png "Imagen ComprobandoTar")
 
 
-### Instalar la herramienta rsync <a name="id3"></a>
+### 3 - Instalar la herramienta rsync <a name="id3"></a>
 
 Para instalar la herramienta rsync usamos el siguiente comando:
 
@@ -62,17 +62,48 @@ Una vez que el usuario tiene permisos sobre la carpeta a clonar podemos ejecutar
 
 Como vemos en la imagen, se han ejecutado una serie de comandos a modo de prueba:
 
-1. ifconfig enp0s8 -> (en maquina2) para ver su ip, la maquina 2 tiene la ip **192.168.56.115** y la maquina 1 tiene la **192.168.56.105**
-2. less /var/www/html/hola.html -> para ver el contenido del archivo original de la maquina 2, como vemos, tiene el texto: **"Esto funciona en la maquina2"**
+1. ifconfig enp0s8 -> (en maquina2) para ver su ip (la maquina 2 tiene la ip **192.168.56.115** y la maquina 1 tiene la **192.168.56.105**)
+2. less /var/www/html/hola.html -> para ver el contenido del archivo original de la maquina 2, como vemos, tiene el texto: **"Esto funciona en maquina2"**
 3. Ejecutamos el rsync
 4. less /var/www/html/hola.html -> revisamos el archivo y vemos que el contenido ha cambiado, ahora pone: **"Esto funciona en maquina1"**
 
 
-### Acceso sin contraseña para ssh <a name="id4"></a>
+### 4 - Acceso sin contraseña para ssh <a name="id4"></a>
 
+Ahora haremos que la maquina 2 pueda ejecutarse mediante ssh a la maquina 1 sin contraseña.
 
+En la maquina 2 ejecutamos:
 
+- ssh-keygen -b 4096 -t rsa
 
-### Programar tareas con crontab <a name="id5"></a>
+Con este comando crearemos una clave nueva (ya existia una de la practica 1, por eso pregunta que si queremos sobreescribir)
+
+![Imagen ssh-keygen](https://github.com/rauldpm/SWAP1718/blob/master/Practica2/Imagenes/ssh-keygen.png "Imagen ssh-keygen")
+
+Para que esto funcione, debemos dar permisos al fichero que contiene las claves autorizadas
+
+- chmod 600 ~/.ssh/authorized_keys
+
+![Imagen chmod](https://github.com/rauldpm/SWAP1718/blob/master/Practica2/Imagenes/chmod.png "Imagen chmod")
+
+Acto seguido enviamos la nueva clave a la otra maquina mediante el siguiente comando:
+
+- ssh-copy-id 192.168.56.105
+
+![Imagen ssh-copy](https://github.com/rauldpm/SWAP1718/blob/master/Practica2/Imagenes/ssh-copy.png "Imagen ssh-copy")
+
+Para probar que esto ha funcionado ejecutamos en la maquina 2 un comando sobre la maquina 1
+
+- ssh 192.168.56.105 uname -a
+
+![Imagen ssh-command](https://github.com/rauldpm/SWAP1718/blob/master/Practica2/Imagenes/sshCommand.png "Imagen ssh-command")
+
+Como vemos, ha ejecutado el comando sin contraseña, para asegurarnos, ejecutamos una conexion sobre la maquina 1
+
+![Imagen ssh-connect](https://github.com/rauldpm/SWAP1718/blob/master/Practica2/Imagenes/sshConnect.png "Imagen ssh-command")
+
+Y como volvemos a ver, conecta directamente
+
+### 5 - Programar tareas con crontab <a name="id5"></a>
 
 
