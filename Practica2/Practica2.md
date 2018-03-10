@@ -18,7 +18,7 @@
 
 ### 1 - Descripcion <a name="id1"></a>
 
-
+En esta practica veremos como sincronizar carpetas entre maquinas de forma automatica mediante la herramienta **rsync** y el programador de tareas **crontab**, tambien veremos como conectar las maquinas sin requerir una contraseña mediante **ssh**.
 
 ### 2 - Crear tar en con contenido local en equipo remoto <a name="id2"></a>
 
@@ -126,7 +126,7 @@ Primero cambiamos el contenido de la maquina 1
 
 ![Imagen hola11](https://github.com/rauldpm/SWAP1718/blob/master/Practica2/Imagenes/hola11.png "Imagen hola11")
 
-Y vemos que la maquina 2 tiene otro contenido
+Y vemos que la maquina 2 tiene el mismo contenido
 
 ![Imagen hola21](https://github.com/rauldpm/SWAP1718/blob/master/Practica2/Imagenes/hola21.png "Imagen hola21")
 
