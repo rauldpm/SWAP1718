@@ -6,7 +6,6 @@
 ### Participantes ###
 
 - Raul Del Pozo Moreno
-- Juan Carlos Hermoso Quesada
 
 ### Indice ###
 
