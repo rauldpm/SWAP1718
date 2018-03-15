@@ -10,48 +10,48 @@
 
 ### Indice ###
 
-1. [Descripcion](#id1)
-2. [Configuracion de red](#id2)
-3. [Conexion por ssh entre maquinas](#id3)
-4. [Creacion y prueba de fichero en HTML](#id4)
-5. [Conexion por curl entre maquinas](#id5)
+1. [Descripción](#id1)
+2. [Configuración de red](#id2)
+3. [Conexión por ssh entre maquinas](#id3)
+4. [Creación y prueba de fichero en HTML](#id4)
+5. [Conexión por curl entre maquinas](#id5)
 
-### Descripcion <a name="id1"></a>
+### Descripción <a name="id1"></a>
 
-En esta practica se realizara la instalacion de dos maquinas virtuales con Ubuntu Server 16.04.3. Durante la instalacion se instalaran los servicios siguientes, tal y como indica la practica:
+En esta practica se realizara la instalación de dos maquinas virtuales con Ubuntu Server 16.04.3. Durante la instalación se instalaran los servicios siguientes, tal y como indica la practica:
 
 - OpenSSH server
 - LAMP server
 
-Como el proceso de alguna configuraciones es exactamente el mismo en ambas maquinas, en algunos pasos solo se mostrara la configuracion de una de ellas, indicando que hay que repetir para la otra maquina.
+Como el proceso de alguna configuraciones es exactamente el mismo en ambas maquinas, en algunos pasos solo se mostrara la configuración de una de ellas, indicando que hay que repetir para la otra maquina.
 
-### Configuracion de red <a name="id2"></a>
+### Configuración de red <a name="id2"></a>
 
-Para permitir la conexion entre ambas maquinas virtuales, se ha creado una red Solo-Anfitrion en VirtualBox con las siguientes caracteristicas:
+Para permitir la conexión entre ambas maquinas virtuales, se ha creado una red Solo-Anfitrión en VirtualBox con las siguientes características:
 
-**Nombre Red Solo-Anfitrion**
+**Nombre Red Solo-Anfitrión**
  
-![Imagen Red-Anfitrion Nombre](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/RedSoloAnfitrion.png "Imagen Red-Anfitrion Nombre")
+![Imagen Red-Anfitrión Nombre](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/RedSoloAnfitrion.png "Imagen Red-Anfitrión Nombre")
 
-**Configuracion Adaptador**
+**Configuración Adaptador**
 
-![Imagen Adaptador Solo-Afitrion](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/RedSoloAnfitrionAdaptador.png "Imagen Configuracion Adaptador")
+![Imagen Adaptador Solo-Anfitrión](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/RedSoloAnfitrionAdaptador.png "Imagen Configuración Adaptador")
 
-**Configuracion DHCP**
+**Configuración DHCP**
 
-![Imagen DHCP Solo-Anfitrion](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/RedSoloAnfitrionDHCP.png "Imagen Configuracion DHCP")
+![Imagen DHCP Solo-Anfitrión](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/RedSoloAnfitrionDHCP.png "Imagen Configuracion DHCP")
 
-**Configuracion Red Maquina Virtual**
+**Configuración Red Maquina Virtual**
 
-Una vez configurado Virtual Box, hay que crear el adaptador en las maquinas virtuales, este proceso es el mismo para las dos maquinas asi que solo se mostrara una de ellas, para ello, vamos a la **Configuracion** de la maquina virtual y en la opcion de **Red**, vamos a la pestaña **Adaptador 2**, aqui lo configuramos de la siguiente manera:
+Una vez configurado VirtualBox, hay que crear el adaptador en las maquinas virtuales, este proceso es el mismo para las dos maquinas así que solo se mostrara una de ellas, para ello, vamos a la **Configuración** de la maquina virtual y en la opción de **Red**, vamos a la pestaña **Adaptador 2**, aquí lo configuramos de la siguiente manera:
 
-![Imagen Configuracion Red Maquina Virtual](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/Configuracion%20Red%20Maquina%20Virtual.png "Imagen Configuracion Red Maquina Virtual")
+![Imagen Configuración Red Maquina Virtual](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/Configuracion%20Red%20Maquina%20Virtual.png "Imagen Configuración Red Maquina Virtual")
 
 El siguiente paso es crear la interfaz de red nueva en Ubuntu Server, para ello, iniciamos la maquina virtual y una vez logueados en el sistema escribimos el siguiente comando:
 
 - sudo cp /etc/network/interfaces /etc/network/interfaces.old (para tener un respaldo de seguridad)
 
-Despues de crear la copia de seguridad, editamos el archivo para crear la interfaz:
+Después de crear la copia de seguridad, editamos el archivo para crear la interfaz:
 
 - sudo vim /etc/network/interfaces
 
@@ -59,7 +59,7 @@ Despues de crear la copia de seguridad, editamos el archivo para crear la interf
 
 ![Imagen Interfaz Maquina 2](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/Configuracion%20interfaces%202.png "Imagen Interfaz 2")
 
-Como podemos ver, se le ha asignado la direccion ip 192.168.56.105 a la maquina ubuntu1, y 192.168.56.115 a la maquina ubuntu2, mediante estas direcciones las maquinas seran capaces de conectarse entre si como veremos mas adelante.
+Como podemos ver, se le ha asignado la dirección ip 192.168.56.105 a la maquina ubuntu1, y 192.168.56.115 a la maquina ubuntu2, mediante estas direcciones las maquinas serán capaces de conectarse entre si como veremos mas adelante.
 
 Para ver si funciona esto, hacemos ping a cada maquina
 
@@ -74,9 +74,9 @@ Para ver si funciona esto, hacemos ping a cada maquina
 
 ![Imagen ping maquina 2 a 1](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/Ping%20maquina%202.png "Imagen Ping maquina 2")
 
-Como vemos, hay conexion entre ellas, lo siguiente es comprobar si hay conexion hacia fuera, hacia internet, para ello ejecutamos el siguiente comando:
+Como vemos, hay conexión entre ellas, lo siguiente es comprobar si hay conexión hacia fuera, hacia Internet, para ello ejecutamos el siguiente comando:
 
-**Ping a google**
+**Ping a Google**
 
 - ping 8.8.8.8 
 
@@ -93,20 +93,20 @@ En algunas ocasiones, es posible que de error y no haya salida (se quedara pensa
 
 Con esto, hemos reseteado la red, y como vemos, ya funciona:
 
-![Ping exito](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/ping%20google%20exito.png "Ping exito")
+![Ping éxito](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/ping%20google%20exito.png "Ping éxito")
 
 Este proceso se realiza para ambas maquinas.
 
-### Conexion por ssh entre maquinas <a name="id3"></a>
+### Conexión por ssh entre maquinas <a name="id3"></a>
 
-Para la conexion mediante ssh, tenemos que seguir una serie de pasos, los cuales consisten en:
+Para la conexión mediante ssh, tenemos que seguir una serie de pasos, los cuales consisten en:
 
 1. Crear clave ssh
 2. Importar clave a la otra maquina
 
-**Creacion de clave ssh en maquina 2 (ubuntu2)**
+**Creación de clave ssh en maquina 2 (ubuntu2)**
 
-Para la creacion de la clave ssh tenemos que acudir al siguiente comando, el cual nos creara una clave a la cual podremos configurar con un nombre (opcional) y darle una contraseña para su uso. 
+Para la creación de la clave ssh tenemos que acudir al siguiente comando, el cual nos creara una clave a la cual podremos configurar con un nombre (opcional) y darle una contraseña para su uso. 
 
 - shh-keygen
 
@@ -116,26 +116,26 @@ Una vez creada la clave, la importamos de la maquina 2 a la otra maquina con el 
 
 - ssh-copy-id rauldpm@192.168.56.105
 
-**Envio de clave ssh de maquina 2 (ubuntu2) a maquina 1 (ubuntu1)**
+**Envío de clave ssh de maquina 2 (ubuntu2) a maquina 1 (ubuntu1)**
 
-![Envio clave ssh ubuntu2 a ubuntu1](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/ssh-copy2.png "Envio clave ssh ubuntu2 a ubuntu1")
+![Envío clave ssh ubuntu2 a ubuntu1](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/ssh-copy2.png "Envío clave ssh ubuntu2 a ubuntu1")
 
-Una vez que ambas maquinas tienen la clave de la otra, es hora de comprobar que se puede realizar la conexion entre ellas, esto se hara con el comando:
+Una vez que ambas maquinas tienen la clave de la otra, es hora de comprobar que se puede realizar la conexión entre ellas, esto se hará con el comando:
 
 - ssh rauldpm@192.168.56.105 (en maquina 2, para conectar con la maquina 1)
 
-**Conexion de maquina 2 (ubuntu2) a maquina1 (ubuntu1)**
+**Conexión de maquina 2 (ubuntu2) a maquina1 (ubuntu1)**
 
-![Conexion ssh ubuntu2 a ubuntu1](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/ssh-connect2.png "Conexion ssh ubuntu2 a ubuntu1")
+![Conexión ssh ubuntu2 a ubuntu1](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/ssh-connect2.png "Conexión ssh ubuntu2 a ubuntu1")
 
-Como podemos ver, antes de la conexion se ha realizado un ifconfig de la interfaz **enp0s8**, y si nos fijamos, una vez realizada la conexion, la direccion ip de la interfaz **enp0s8** cambia de valor, coincidiendo con la ip a la cual se le ha realizado la conexion.
+Como podemos ver, antes de la conexión se ha realizado un ifconfig de la interfaz **enp0s8**, y si nos fijamos, una vez realizada la conexión, la dirección ip de la interfaz **enp0s8** cambia de valor, coincidiendo con la ip a la cual se le ha realizado la conexión.
 
-Tambien podemos saber que ha sido un exito porque el nombre de la maquina cambia.
+También podemos saber que ha sido un éxito porque el nombre de la maquina cambia.
 
 
-### Creacion y prueba de fichero en HTML <a name="id4"></a>
+### Creación y prueba de fichero en HTML <a name="id4"></a>
 
-Ahora vamos a comprobar que el Apache2 esta en funcionamiento, para ello se va a crear un archivo HTML llamado hola.html en la ruta "/var/www/html/", el cual contendra el siguiente codigo:
+Ahora vamos a comprobar que el Apache2 esta en funcionamiento, para ello se va a crear un archivo HTML llamado hola.html en la ruta "/var/www/html/", el cual contendrá el siguiente código:
 
 <HTML>
   <BODY>
@@ -147,20 +147,20 @@ Esto lo vamos a mostrar solo en una maquina ya que es el mismo proceso en ambas 
 
 - sudo vim /var/www/html/hola.html
 
-Y para ver el contenido mas facilmente:
+Y para ver el contenido mas fácilmente:
 
 - sudo less /var/www/html/hola.html
 
 ![Archivo HTML](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/holaMaquina1.png "Archivo HTML")
 
-Y en el navegador de la maquina anfitrion comprobamos que se interpreta el archivo.
+Y en el navegador de la maquina anfitrión comprobamos que se interpreta el archivo.
 
-![Comprobacion HTML](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/HTML.png "Comprobacion HTML")
+![Comprobación HTML](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/HTML.png "Comprobación HTML")
 
 
-### Conexion por curl entre maquinas <a name="id5"></a>
+### Conexión por curl entre maquinas <a name="id5"></a>
 
-Para comprobar que tenemos conectividad mediante curl, realizaremos una peticion del archivo hola.html de la otra maquina.
+Para comprobar que tenemos conectividad mediante curl, realizaremos una petición del archivo hola.html de la otra maquina.
 
 - curl 192.168.56.115/hola.html (desde ubuntu1 a ubuntu2)
 - curl 192.168.56.105/hola.html (desde ubuntu2 a ubuntu1)
@@ -172,7 +172,6 @@ Para comprobar que tenemos conectividad mediante curl, realizaremos una peticion
 **Curl desde la maquina 2 (ubuntu2) a la maquina 1 (ubuntu1)**
 
 ![Curl ubuntu2 a ubuntu1](https://github.com/rauldpm/SWAP1718/blob/master/Practica1/Imagenes/curl2.png "Curl ubuntu2 a ubuntu1")
-
 
 
 
