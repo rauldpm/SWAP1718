@@ -137,11 +137,11 @@ También podemos saber que ha sido un éxito porque el nombre de la máquina cam
 
 Ahora vamos a comprobar que el Apache2 está en funcionamiento, para ello se va a crear un archivo HTML llamado hola.html en la ruta "/var/www/html/", el cual contendrá el siguiente código:
 
-> <HTML>
->  <BODY>
->    Esto funciona  :)
->  </BODY>
->/HTML>
+\ <HTML>
+\  <BODY>
+\    Esto funciona  :)
+\  </BODY>
+\ </HTML>
 
 
 Esto lo vamos a mostrar solo en una máquina ya que es el mismo proceso en ambas máquinas.
