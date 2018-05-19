@@ -91,7 +91,7 @@ ___
 
 - Ejercicio T4.1: Buscar información sobre cuánto costaría en la actualidad un mainframe. Comparar precio y potencia entre esa máquina y una granja web de unas prestaciones similares.
 
-	https://www-03.ibm.com/systems/es/z/ -> Mainframe IBM Z
+	https://www-03.ibm.com/systems/es/z/ -> Mainframe IBM Z  
 	https://en.wikipedia.org/wiki/IBM_z14_(microprocessor)
 	
 	- No he encontrado un precio para este mainframe, puesto que para saberlas hay que contactar con IBM por telefono, y este rehusa a decir el costo, pero si ha indicado que que versiones antiguas estan entre 75.000$ y 2M$
