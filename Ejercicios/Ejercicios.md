@@ -30,6 +30,7 @@ ___
 - Ejercicio T2.1: Calcular la disponibilidad del sistema si tenemos dos réplicas de cada elemento (en total 3 elementos en cada subsistema)
 
 Disponibilidad Inicial
+-- | --
 Componente | Disponibilidad
 Web | 85%
 Application | 90%
