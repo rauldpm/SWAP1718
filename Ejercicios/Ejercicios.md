@@ -30,16 +30,18 @@ ___
 - Ejercicio T2.1: Calcular la disponibilidad del sistema si tenemos dos réplicas de cada elemento (en total 3 elementos en cada subsistema)
 
 Disponibilidad Inicial
--- | --
-Componente | Disponibilidad
-Web | 85%
-Application | 90%
-Database | 99.9%
-DNS | 98%
-Firewall | 85%
-Switch | 99%
-Data Center | 99.99%
-ISP | 95%
+
+
+|Componente  |Disponibilidad|
+| :----      | ----:        |
+|Web         | 85%          |
+|Application | 90%          |
+|Database    | 99.9%        |
+|DNS         | 98%          |
+|Firewall    | 85%          |
+|Switch      | 99%          |
+|Data Center | 99.99%       |
+|ISP         | 95%          |
 
 Con 2 elementos en cada subsistema
 Componente | Disponibilidad
