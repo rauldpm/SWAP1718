@@ -31,18 +31,18 @@ ___
 
 
 
-|Disponibilidad Inicial|Con 2 elementos en cada subsistema|
-| :----      | ----:        | :----       | ----:        |
-|Componente  |Disponibilidad| Componente  |Disponibilidad|
-| :----      | ----:        |  :----      | ----:        | 
-|Web         | 85%          | Web         | 97.75%       |
-|Application | 90%          | Application | 99%          |
-|Database    | 99.9%        | Database    | 99.9999%     |
-|DNS         | 98%          | DNS         | 99.96%       |
-|Firewall    | 85%          | Firewall    | 99.75%       |
-|Switch      | 99%          | Switch      | 99.99%       |
-|Data Center | 99.99%       | Data Center | 99.99%       |
-|ISP         | 95%          | ISP         | 99.75%       |
+|Disponibilidad Inicial     |Con 2 elementos en cada subsistema|
+| :----                     | ----:                       |
+|Componente  |Disponibilidad| Componente  |Disponibilidad |
+| :----      | ----:        |  :----      | ----:         | 
+|Web         | 85%          | Web         | 97.75%        |
+|Application | 90%          | Application | 99%           |
+|Database    | 99.9%        | Database    | 99.9999%      |
+|DNS         | 98%          | DNS         | 99.96%        |
+|Firewall    | 85%          | Firewall    | 99.75%        |
+|Switch      | 99%          | Switch      | 99.99%        |
+|Data Center | 99.99%       | Data Center | 99.99%        |
+|ISP         | 95%          | ISP         | 99.75%        |
 
 
 
