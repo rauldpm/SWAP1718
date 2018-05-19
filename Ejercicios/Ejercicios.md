@@ -89,11 +89,33 @@ ___
 
 ### Tema 4
 
-	Ejercicio T4.1: Buscar información sobre cuánto costaría en la actualidad un mainframe. Comparar precio y potencia entre esa máquina y una granja web de unas prestaciones similares.
+- Ejercicio T4.1: Buscar información sobre cuánto costaría en la actualidad un mainframe. Comparar precio y potencia entre esa máquina y una granja web de unas prestaciones similares.
 
 	https://www-03.ibm.com/systems/es/z/ -> Mainframe IBM Z
+	https://en.wikipedia.org/wiki/IBM_z14_(microprocessor)
 	
+	- No he encontrado un precio para este mainframe, puesto que para saberlas hay que contactar con IBM por telefono, y este rehusa a decir el costo, pero si ha indicado que que versiones antiguas estan entre 75.000$ y 2M$
+	
+- Ejercicio T4.2: Buscar informacion sobre el precio y las caracteristicas de balanceadores hardware especificos. Compara las prestaciones que ofrecen unos y otros.
 
+	- Air Live IGR-1500 http://www.sistematics.com/Air-Live-IGR-1500/4/BAC0002
+		- 4 puertos WAN
+		- Balanceo interno/externo
+		- Concurrencia de usuarios: 80 ~ 100
+		- Precio: 325€
+	- Syswan Duolinks SW34 http://www.sistematics.com/Syswan-Duolinks-SW24/4/BAC0005
+		- 2 puertos WAN
+		- 4 puertos
+		- 16MB DRAM
+		- Precio: 228€
+	- Syswan Octolinks SW88 http://www.sistematics.com/Syswan-Octolinks-SW88/4/BAC0001
+		- 8 puertos WAN
+		- 14 puertos LAN
+		- VPN
+		- Precio: 788€
+	- Links
+		-
+	
 ___
 
 ### Tema 5
