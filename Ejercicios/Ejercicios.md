@@ -29,7 +29,7 @@ ___
 
 - Ejercicio T2.1: Calcular la disponibilidad del sistema si tenemos dos réplicas de cada elemento (en total 3 elementos en cada subsistema)
 
-![0](./imagenes/t2.PMG)
+![0](./imagenes/t2.PNG)
 
 
 
