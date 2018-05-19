@@ -25,33 +25,33 @@ ___
 	- Node.js: Es un entorno en tiempo de ejecución multiplataforma, usa arquitectura basada en eventos y en el motor v8 de Google. Usa un solo hilo de ejecución, permitiendo las conexiones de forma asíncrona. Se usa principalmente para construir servidores web entre otros.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Tema 2
 
-	Ejercicio T2.1: Calcular la disponibilidad del sistema si tenemos dos réplicas de cada elemento (en total 3 elementos en cada subsistema)
-Disponibilidad Inicial		Con 2 elementos en cada subsistema
-Componente	Disponibilidad		Componente	Disponibilidad
-Web	85%		Web	97.75%
-Application	90%		Application	99%
-Database	99.9%		Database	99.9999%
-DNS	98%		DNS	99.96%
-Firewall	85%		Firewall	99.75%
-Switch	99%		Switch	99.99%
-Data Center	99.99%		Data Center	99.99%
-ISP	95%		ISP	99.75%
+- Ejercicio T2.1: Calcular la disponibilidad del sistema si tenemos dos réplicas de cada elemento (en total 3 elementos en cada subsistema)
+
+Disponibilidad Inicial
+Componente | Disponibilidad
+Web | 85%
+Application | 90%
+Database | 99.9%
+DNS | 98%
+Firewall | 85%
+Switch | 99%
+Data Center | 99.99%
+ISP | 95%
+
+Con 2 elementos en cada subsistema
+Componente | Disponibilidad
+Web | 97.75%
+Application | 99%
+Database | 99.9999%
+DNS | 99.96%
+Firewall | 99.75%
+Switch | 99.99%
+Data Center | 99.99%
+ISP | 99.75%
+
+
 
 Usando la fórmula: A_s= A_c1+(1- A_c1 )* A_c2 , podemos medir la mejora de disponibilidad  que se alcanza al mejorar el sistema, por tanto, como nos pide averiguarla con 3 elementos por subsistema, usamos los valores proporcionados en la segunda tabla.
 A_Web=0.9775+(1-0.9775)*0.85=0.996625=99.6625%
