@@ -4,10 +4,6 @@
 
 Ejercicios SWAP
 Raul Del Pozo Moreno
-
-Tabla de contenido
-No se encontraron entradas de tabla de contenido.
-
 ___
 
 ### Tema 1
