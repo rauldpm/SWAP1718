@@ -14,15 +14,15 @@ ___
 
 - Ejercicio T1: Buscar información sobre las tareas o servicios web para los que se usan más los programas que comentamos al principio de la sesión
 
-	 - Apache: Usado para servir páginas web estáticas/dinámicas. Es el más usado actualmente en todo el mundo.
+	- Apache: Usado para servir páginas web estáticas/dinámicas. Es el más usado actualmente en todo el mundo.
 
-Nginx: Servidor web de alto rendimiento, se usa como servidor de páginas web, balanceador o proxy para correo.
+	- Nginx: Servidor web de alto rendimiento, se usa como servidor de páginas web, balanceador o proxy para correo.
 
-thttpd: Principalmente diseñado para servir contenido HTTP estático, al usar los requerimientos mínimos de un servidor HTTP, es ideal para servir grandes volúmenes de información estática.
+	- thttpd: Principalmente diseñado para servir contenido HTTP estático, al usar los requerimientos mínimos de un servidor HTTP, es ideal para servir grandes volúmenes de información estática.
 
-Cherokee: Puede usarse como sistema embebido, balanceador de carga, dispone de panel de autentificación y permite redirecciones.
+	- Cherokee: Puede usarse como sistema embebido, balanceador de carga, dispone de panel de autentificación y permite redirecciones.
 
-Node.js: Es un entorno en tiempo de ejecución multiplataforma, usa arquitectura basada en eventos y en el motor v8 de Google. Usa un solo hilo de ejecución, permitiendo las conexiones de forma asíncrona. Se usa principalmente para construir servidores web entre otros.
+	- Node.js: Es un entorno en tiempo de ejecución multiplataforma, usa arquitectura basada en eventos y en el motor v8 de Google. Usa un solo hilo de ejecución, permitiendo las conexiones de forma asíncrona. Se usa principalmente para construir servidores web entre otros.
 
 
 
