@@ -113,12 +113,57 @@ ___
 		- 14 puertos LAN
 		- VPN
 		- Precio: 788€
-	- Links
-		-
+	- Una comparativa de la marca KEMP
+
+![0](./imagenes/balanceadores.PNG)
+
+- Ejercicio T4.6: Buscar información sobre los bloques de IP para los distintos países o continentes
 	
+	- En la siguiente pagina se pueden ver las IP asignadas a cada pais: https://lite.ip2location.com/ip-address-ranges-by-country
+	
+- Ejercicio T4.7: Buscar información sobre métodos y herramientas para implementar GSLB
+	
+	- Para implementar GLSB se pueden usar varios metodos, entre los cuales se encuentran los siguientes:
+		- Round Robin
+		- Least Connections
+		- Least Response Time
+		- Least Bandwitch
+		- Least Packets
+		- Round Trip Time (RTT)
 ___
 
 ### Tema 5
+
+- Ejercicio T5.1: Instalar wireshark y observar cómo fluye el tráfico de red en uno de los servidores web mientras se le hacen peticiones HTTP.
+	
+	- Este ejercicio se ha realizado en el trabajo de la asignatura sobre Wireshark: https://github.com/rauldpm/SWAP1718/blob/master/Trabajo%20Wireshark/Wireshark.pdf -> Pagina 20
+
+- Ejercicio T5.2: Buscar información sobre características, disponibilidad para diversos SO, etc de herramientas para monitorizar las prestaciones de un servidor
+
+	- Nagios
+		- Monitorización de servicios de red (SMTP, POP3, HTTP, NNTP, ICMP, SNMP).
+    		- Monitorización de los recursos de equipos hardware (carga del procesador, uso de los discos, logs del sistema) en varios sistemas operativos, incluso Microsoft Windows con los plugins NRPE_NT o NSClient++.
+   		- Monitorización remota, a través de túneles SSL cifrados o SSH.
+    		- Diseño simple de plugins, que permiten a los usuarios desarrollar sus propios chequeos de servicios dependiendo de sus necesidades, usando sus herramientas preferidas (Bash, C++, Perl, Ruby, Python, PHP, C#...).
+    		- Chequeo de servicios paralizados.
+    		- Posibilidad de definir la jerarquía de la red, permitiendo distinguir entre host caídos y host inaccesibles.
+    		- Notificaciones a los contactos cuando ocurren problemas en servicios o hosts, así como cuando son resueltos (a través del correo electrónico, buscapersonas, Jabber, SMS, o cualquier método definido por el usuario junto con su correspondiente complemento).
+   		- Posibilidad de definir manejadores de eventos que ejecuten al ocurrir un evento de un servicio o host para resoluciones de problemas proactivas.
+    		- Rotación automática del archivo de registro.
+    		- Soporte para implementar hosts de monitores redundantes.
+    		- Visualización del estado de la red en tiempo real a través de interfaz web, con la posibilidad de generar informes y gráficas de comportamiento de los sistemas monitorizados, y visualización del listado de notificaciones enviadas, historial de problemas, archivos de registros....
+
+	- Zabbix
+		- Alto rendimiento y alta capacidad (posibilidad de monitorizar cientos de miles de dispositivos)
+		- Auto descubrimiento de servidores y dispositivos de red
+		- Monitorización distribuida y una administración web centralizada
+		- Agentes nativos en múltiples plataformas
+		- Posibilidad de monitorización sin agentes
+		- Monitorización JMX
+		- Monitorización Web
+		- Configuración de permisos por usuarios y grupos
+		- Métricas SLA y ITIL
+		- Sistema flexible de notificación de eventos (Email, XMPP, etc)
 
 
 ___
