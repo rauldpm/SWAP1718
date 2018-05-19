@@ -14,7 +14,7 @@ ___
 
 - Ejercicio T1: Buscar información sobre las tareas o servicios web para los que se usan más los programas que comentamos al principio de la sesión
 
-- - Apache: Usado para servir páginas web estáticas/dinámicas. Es el más usado actualmente en todo el mundo.
+ - Apache: Usado para servir páginas web estáticas/dinámicas. Es el más usado actualmente en todo el mundo.
 
 Nginx: Servidor web de alto rendimiento, se usa como servidor de páginas web, balanceador o proxy para correo.
 
