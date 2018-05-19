@@ -48,22 +48,22 @@ El sistema ha mejorado hasta alcanzar una disponibilidad del 99.9875%
 
  - Ejercicio T2.2: Buscar frameworks y librerías para diferentes lenguajes que permitan hacer aplicaciones altamente disponibles con relativa facilidad
 
-	Linux-HA: Framework que proporciona una alta disponibilidad para clusters para distribuciones Linux, FreeBSD, OpenBSD, Solaris y Mac OS X.
+	- Linux-HA: Framework que proporciona una alta disponibilidad para clusters para distribuciones Linux, FreeBSD, OpenBSD, Solaris y Mac OS X.
 
-	Red Hat Cluster: Proporciona una alta disponibilidad y balanceo de carga en clusters. Ambas funcionalidades se pueden usar en el mismo sistema, aunque no es recomendable.
+	- Red Hat Cluster: Proporciona una alta disponibilidad y balanceo de carga en clusters. Ambas funcionalidades se pueden usar en el mismo sistema, aunque no es recomendable.
 
-	Oracle Solaris Cluster: Proporciona una alta disponibilidad en clusters de bases de datos, archivos compartidos en red, comercio electrónico…
+	- Oracle Solaris Cluster: Proporciona una alta disponibilidad en clusters de bases de datos, archivos compartidos en red, comercio electrónico…
 
-	Ejercicio T2.3: ¿Cómo analizar el nivel de carga de cada uno de los subsistemas en el servidor? Buscar herramientas y aprender a usarlas, o recordar cómo usarlas.
+- Ejercicio T2.3: ¿Cómo analizar el nivel de carga de cada uno de los subsistemas en el servidor? Buscar herramientas y aprender a usarlas, o recordar cómo usarlas.
 
-	Apache Benchmark: Sirve para generar carga en el servidor Apache, dándonos como resultado el comportamiento del servidor.
+	- Apache Benchmark: Sirve para generar carga en el servidor Apache, dándonos como resultado el comportamiento del servidor.
 	Uso: ab –n (número de peticiones) –c (concurrencia) URL
 
-	Jmeter: Misma funcionalidad que Apache Benchmark, solo que también puede ser configurado como monitor.
+	- Jmeter: Misma funcionalidad que Apache Benchmark, solo que también puede ser configurado como monitor.
 
-	Phoronix Test Suite: Proporciona una serie de configuraciones con las que generar carga al servidor de una forma general o enfocando el test a un componente concreto.  
+	- Phoronix Test Suite: Proporciona una serie de configuraciones con las que generar carga al servidor de una forma general o enfocando el test a un componente concreto.  
 
-	Zabbix: Sistema de monitorización de redes, servidores, hardware… incluye un backend en C y un frontend en php. Permite configurarlo para hacer chequeos periódicos y monitorear mediante un cliente las maquinas en las que se instala.
+	- Zabbix: Sistema de monitorización de redes, servidores, hardware… incluye un backend en C y un frontend en php. Permite configurarlo para hacer chequeos periódicos y monitorear mediante un cliente las maquinas en las que se instala.
 
 
 
