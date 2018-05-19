@@ -32,7 +32,7 @@ ___
 
 
 |Disponibilidad Inicial|Con 2 elementos en cada subsistema|
-| :---- | ----: |
+| :----      | ----:        | :----       | ----:        |
 |Componente  |Disponibilidad| Componente  |Disponibilidad|
 | :----      | ----:        |  :----      | ----:        | 
 |Web         | 85%          | Web         | 97.75%       |
