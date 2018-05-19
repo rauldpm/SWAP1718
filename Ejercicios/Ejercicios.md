@@ -24,6 +24,7 @@ ___
 
 	- Node.js: Es un entorno en tiempo de ejecución multiplataforma, usa arquitectura basada en eventos y en el motor v8 de Google. Usa un solo hilo de ejecución, permitiendo las conexiones de forma asíncrona. Se usa principalmente para construir servidores web entre otros.
 
+___
 
 ### Tema 2
 
@@ -65,30 +66,26 @@ El sistema ha mejorado hasta alcanzar una disponibilidad del 99.9875%
 
 	- Zabbix: Sistema de monitorización de redes, servidores, hardware… incluye un backend en C y un frontend en php. Permite configurarlo para hacer chequeos periódicos y monitorear mediante un cliente las maquinas en las que se instala.
 
-
-
-
-
-
-
-
+___
 
 ### Tema 3
 
-	Ejercicio T3.1: Buscar con que ordenes de terminal o herramientas graficas podemos configurar bajo Windows y bajo Linux el enrutamiento del tráfico de un servidor para pasar el tráfico desde una subred a otra.
+- Ejercicio T3.1: Buscar con que ordenes de terminal o herramientas graficas podemos configurar bajo Windows y bajo Linux el enrutamiento del tráfico de un servidor para pasar el tráfico desde una subred a otra.
 
-	Linux
-	Iptables (terminal), ufw, route
+	- Linux
+	-	- Iptables (terminal), ufw, route
 
-	Windows
-	Route, Windows Firewall
+	- Windows
+	-	- Route, Windows Firewall
 
-	Ejercicio T3.2: Buscar con qué órdenes de terminal o herramientas gráficas podemos configurar bajo Windows y bajo Linux el filtrado y bloqueo de paquetes.
+- Ejercicio T3.2: Buscar con qué órdenes de terminal o herramientas gráficas podemos configurar bajo Windows y bajo Linux el filtrado y bloqueo de paquetes.
 
 	Linux
 	Iptables, ufw, ipfwadm
 	Windows
 	Windows Firewall
+
+___
 
 ### Tema 4
 
@@ -97,11 +94,16 @@ El sistema ha mejorado hasta alcanzar una disponibilidad del 99.9875%
 	https://www-03.ibm.com/systems/es/z/ -> Mainframe IBM Z
 	
 
+___
 
 ### Tema 5
 
 
+___
+
 ### Tema 6
 
+
+___
 
 ### Tema 7
