@@ -73,17 +73,17 @@ ___
 - Ejercicio T3.1: Buscar con que ordenes de terminal o herramientas graficas podemos configurar bajo Windows y bajo Linux el enrutamiento del tráfico de un servidor para pasar el tráfico desde una subred a otra.
 
 	- Linux
-	-	- Iptables (terminal), ufw, route
+		- Iptables (terminal), ufw, route
 
 	- Windows
-	-	- Route, Windows Firewall
+		- Route, Windows Firewall
 
 - Ejercicio T3.2: Buscar con qué órdenes de terminal o herramientas gráficas podemos configurar bajo Windows y bajo Linux el filtrado y bloqueo de paquetes.
 
-	Linux
-	Iptables, ufw, ipfwadm
-	Windows
-	Windows Firewall
+	- Linux
+		- Iptables, ufw, ipfwadm
+	- Windows
+		- Windows Firewall
 
 ___
 
