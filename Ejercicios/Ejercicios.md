@@ -165,12 +165,3 @@ ___
 		- Métricas SLA y ITIL
 		- Sistema flexible de notificación de eventos (Email, XMPP, etc)
 
-
-___
-
-### Tema 6
-
-
-___
-
-### Tema 7
