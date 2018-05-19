@@ -41,17 +41,12 @@ Usando la fórmula: A_s= A_c1+(1- A_c1 )* A_c2 , podemos medir la mejora de disp
 - A_SW = 0.9999 + (1-0.9999) \* 0.99 = 0.999999 = 99.9999%
 - A_DC = 0.9999 + (1-0.9999) \* 0.9999 = 0.99999999 = 99.999999%
 - A_ISP = 0.9975 + (1-0.9975) \* 0.95 = 0.999875 = 99.9875%
-- D_3 = A_Web \* . . .\* A_ISP
-- D_3 = A_Web \*A_App\*A_DB\*A_DNS\*A_FW\*A_SW\*A_DC\*A_ISP=0.999875=99.9875%
+- D_3 = A_Web \* . . . \* A_ISP
+- D_3 = A_Web \* A_App \* A_DB \* A_DNS \* A_FW \* A_SW \* A_DC \* A_ISP = 0.999875 = 99.9875%
 
 El sistema ha mejorado hasta alcanzar una disponibilidad del 99.9875%
 
-
-
-
-
-
-	Ejercicio T2.2: Buscar frameworks y librerías para diferentes lenguajes que permitan hacer aplicaciones altamente disponibles con relativa facilidad
+ - Ejercicio T2.2: Buscar frameworks y librerías para diferentes lenguajes que permitan hacer aplicaciones altamente disponibles con relativa facilidad
 
 	Linux-HA: Framework que proporciona una alta disponibilidad para clusters para distribuciones Linux, FreeBSD, OpenBSD, Solaris y Mac OS X.
 
